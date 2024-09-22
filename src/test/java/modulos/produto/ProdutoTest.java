@@ -32,7 +32,7 @@ public class ProdutoTest {
         // Configurando os Dados da API Rest da lojinha
         baseURI= "http://165.227.93.41";
         //port =  8080; aqui colocamos a porta aonde esta rodando a API
-        basePath = "/lojinha";
+        basePath = "/lojinha-bugada";
 
         //Obter o token do usuario admin
         this.token = given() // pense que aqui é a requisição
