@@ -6,17 +6,17 @@ import io.restassured.http.ContentType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pojo.ComponentePojo;
+/*import pojo.ComponentePojo;
 import pojo.ProdutoPojo;
 import pojo.UsuarioPojo;
 
 import javax.lang.model.element.ModuleElement;
-import java.lang.invoke.StringConcatFactory;
+import java.lang.invoke.StringConcatFactory;     Biblioteca que não estão sendo usadas.
 import java.util.ArrayList;
 import java.util.List;
+import static io.restassured.matcher.RestAssuredMatchers.*;*/
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 @DisplayName("Testes de API Rest do módulo de Produto")
@@ -32,7 +32,7 @@ public class ProdutoTest {
         // Configurando os Dados da API Rest da lojinha
         baseURI= "http://165.227.93.41";
         //port =  8080; aqui colocamos a porta aonde esta rodando a API
-        basePath = "/lojinha-bugada";
+        basePath = "/lojinha";
 
         //Obter o token do usuario admin
         this.token = given() // pense que aqui é a requisição
